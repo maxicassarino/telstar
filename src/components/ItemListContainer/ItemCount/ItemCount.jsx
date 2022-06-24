@@ -14,7 +14,7 @@ export default function ItemCount ({miProd, Stock}) {
         alert('Productos Agregados al Carrito');
     }
     return (
-        <div>
+        <div className='ItemCount'>
             <p>Producto: {JSON.stringify(miProd)}</p>
             <div className='Stock'>
                 <div onClick={() => restarStock()} className='Boton'>

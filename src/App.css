@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "KdamThmorPro-Regular";
+  src: url(../fonts/KdamThmorPro-Regular.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  animation-name: Opacidad;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  font-family: "KdamThmorPro-Regular";
+  background-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes Opacidad {
   from {
-    transform: rotate(0deg);
+      opacity: 0%;
   }
   to {
-    transform: rotate(360deg);
+      opacity: 100%;
   }
 }

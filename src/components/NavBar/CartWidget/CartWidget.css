@@ -1,0 +1,9 @@
+svg {
+    color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+svg:hover {
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
