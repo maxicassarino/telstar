@@ -14,7 +14,7 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         getArray(array)
             .then(res => {
-                const item = res.find((item) => item.id === 4)
+                const item = res.find((item) => item.id === 2)
                 setProduct(item)
             })
             .catch(err => console.log(err))
