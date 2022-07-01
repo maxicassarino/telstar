@@ -8,12 +8,13 @@ div {
 
 #item-list-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 #Item{
-    margin: 30px;
+    margin: 30px 50px;
     color: black;
     font-size: 2vh;
 }

@@ -34,4 +34,12 @@ export const array = [
         price: 15000,
         pictureUrl: "img/Brazil2014.jpg"
     }
+    ,
+    {
+        id: 6,
+        title: "Telstar Metcha",
+        description: "Designed for Russia 2018",
+        price: 15000,
+        pictureUrl: "img/Russia2018.jpg"
+    }
 ]
