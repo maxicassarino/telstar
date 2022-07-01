@@ -17,6 +17,7 @@ export default function ItemCount ({miProd, stock, initial, onAdd}) {
 
     return (
         <div className='ItemCount'>
+            <h6>{miProd.name}</h6>
             <div className='Count'>
                 <button onClick={Add} disabled={count === stock}>+</button>
                 <h3>{count}</h3>

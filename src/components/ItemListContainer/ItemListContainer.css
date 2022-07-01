@@ -2,6 +2,18 @@ div {
     color: white;
 }
 
-.Titulo {
+#Titulo {
     padding: 5vh 0vh;
+}
+
+#item-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Item{
+    margin: 30px;
+    color: black;
+    font-size: 2vh;
 }

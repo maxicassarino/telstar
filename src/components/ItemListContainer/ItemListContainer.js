@@ -1,23 +1,38 @@
 import React from 'react'
-import ItemCount from './ItemCount/ItemCount'
+import { getArray } from '../helpers/getArray';
+import { array } from '../../data/data';
 import './ItemListContainer.css'
-
-let miProd = {name: "Telstar Ball", price: 5000};
-let stock = 5;
-const initial = 1
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { ItemList } from './ItemList';
 
 const ItemListContainer = ({saludo}) => {
 
-    const onAdd = (count) => {
-        alert("Agregaste " + count + " items al carrito")
-    }
+    const [items, setItems] = useState([])
+    const [loading, setLoading] = useState([true])
+
+    useEffect(() => {
+        setLoading(true)
+        getArray(array)
+            .then(res => setItems(res))
+            .catch(err => console.log(err))
+            .finally(() => setLoading(false))
+    }, [])
 
     return (
+        
         <div>
             <center>
-                <h3 className='Titulo'>{saludo}</h3>
-                <ItemCount miProd={miProd} stock={stock} initial={initial} onAdd={onAdd}/>
+                <h3 id='Titulo'>{saludo}</h3>
             </center>
+            <div id='item-list-container'>
+                {
+                    loading?
+                    <div>Cargando...</div>
+                :
+                    <ItemList items={items}/>
+                }
+            </div>
         </div>
         
     )
