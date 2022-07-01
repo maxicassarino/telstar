@@ -1,21 +1,30 @@
-.ItemCount {
-    padding: 5vh 0px;
+.ItemCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Stock{
-    padding: 2vh 600px ;
+.Count{
     display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
     justify-content: space-between;
 }
 
-.Boton{
-    border: 2px solid darkblue;
+.Count button{
     width: 30px;
     height: 30px;
 }
 
-#Carrito{
-    margin: 0px 600px;
-    padding: 4px;
-    border: 2px solid darkblue;
+.Count h3{
+    margin: 0px;
+    font-size: 25px;
+}
+
+.add{
+    margin: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
 }

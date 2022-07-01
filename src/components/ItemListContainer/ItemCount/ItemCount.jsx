@@ -2,30 +2,27 @@ import React from 'react'
 import { useState } from 'react';
 import './ItemCount.css'
 
-export default function ItemCount ({miProd, Stock}) {
-    const [maxStock, setMaxStock] = useState(Stock)
-    function aumentarStock(){
-        setMaxStock(maxStock + 1);
+export default function ItemCount ({miProd, stock, initial, onAdd}) {
+
+    const [count, setCount] = useState(initial)
+
+    const Add = () => {
+        setCount(count + 1)
     }
-    function restarStock(){
-        setMaxStock(maxStock - 1);
+    const Res = () => {
+        setCount(count - 1)
     }
-    function agregarStock(){
-        alert('Productos Agregados al Carrito');
-    }
+    
+
+
     return (
         <div className='ItemCount'>
-            <p>Producto: {JSON.stringify(miProd)}</p>
-            <div className='Stock'>
-                <div onClick={() => restarStock()} className='Boton'>
-                    <center>-</center>
-                </div>
-                <p>Stock: {maxStock}</p>
-                <div onClick={() => aumentarStock()} className='Boton'>
-                    <center>+</center>
-                </div>
+            <div className='Count'>
+                <button onClick={Add} disabled={count === stock}>+</button>
+                <h3>{count}</h3>
+                <button onClick={Res} disabled={count === initial}>-</button>
             </div>
-            <div onClick={() => agregarStock()} id='Carrito'>Agregar al Carrito</div>
+            <button className='add' onClick={() => onAdd (count)}>Agregar al Carrito</button>
         </div>
     )
 }
