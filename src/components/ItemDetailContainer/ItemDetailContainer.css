@@ -25,13 +25,14 @@
 
 #data{
     color: black;
+    padding-bottom: 50px;
     width: 45%;
     background-color: white;
     border-radius: 10px;
 }
 
 h1{
-    margin: 60px 0px;
+    margin: 50px 0px;
 }
 
 h3{
