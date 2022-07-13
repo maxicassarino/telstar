@@ -4,7 +4,7 @@ export const array = [
         title: "Telstar Durlast",
         description: "Designed for Germany 1974",
         price: 15000,
-        pictureUrl: "img/Germany1974.jpg",
+        pictureUrl: "../img/Germany1974.jpg",
         category: "retro"
     },
     {
@@ -12,7 +12,7 @@ export const array = [
         title: "Tango Durlast",
         description: "Designed for Argentina 1978",
         price: 15000,
-        pictureUrl: "img/Argentina1978.jpg",
+        pictureUrl: "../img/Argentina1978.jpg",
         category: "retro"
     },
     {
@@ -20,7 +20,7 @@ export const array = [
         title: "Teamgeist Berlin",
         description: "Designed for Germany 2006",
         price: 15000,
-        pictureUrl: "img/Germany2006.jpg",
+        pictureUrl: "../img/Germany2006.jpg",
         category: "retro"
     },
     {
@@ -28,7 +28,7 @@ export const array = [
         title: "Jabulani",
         description: "Designed for Sudafrica 2010",
         price: 15000,
-        pictureUrl: "img/Sudafrica2010.jpg",
+        pictureUrl: "../img/Sudafrica2010.jpg",
         category: "moderna"
     },
     {
@@ -36,7 +36,7 @@ export const array = [
         title: "Brazuca",
         description: "Designed for Brazil 2014",
         price: 15000,
-        pictureUrl: "img/Brazil2014.jpg",
+        pictureUrl: "../img/Brazil2014.jpg",
         category: "moderna"
     }
     ,
@@ -45,7 +45,7 @@ export const array = [
         title: "Telstar Metcha",
         description: "Designed for Russia 2018",
         price: 15000,
-        pictureUrl: "img/Russia2018.jpg",
+        pictureUrl: "../img/Russia2018.jpg",
         category: "moderna"
     }
 ]

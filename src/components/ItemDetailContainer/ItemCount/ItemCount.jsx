@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import './ItemCount.css'
 
-export default function ItemCount ({miProd, stock, initial, onAdd}) {
+export default function ItemCount ({stock, initial, onAdd}) {
 
     const [count, setCount] = useState(initial)
 
@@ -17,7 +16,6 @@ export default function ItemCount ({miProd, stock, initial, onAdd}) {
 
     return (
         <div className='ItemCount'>
-            <h6>{miProd.name}</h6>
             <div className='Count'>
                 <button onClick={Add} disabled={count === stock}>+</button>
                 <h3>{count}</h3>

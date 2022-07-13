@@ -47,6 +47,16 @@ nav {
     transition: width 0.5s linear;
 }
 
+svg {
+    color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+svg:hover {
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
 
 
 /* DESKTOP */
